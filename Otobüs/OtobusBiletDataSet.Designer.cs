@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace otobüs_bilet_otomasyonu {
+namespace Otobüs {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace otobüs_bilet_otomasyonu {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("OtbüsBiletOtomasyonuDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("OtobusBiletDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class OtbüsBiletOtomasyonuDataSet : global::System.Data.DataSet {
+    public partial class OtobusBiletDataSet : global::System.Data.DataSet {
         
-        private Tb_OtbüsotomasyonDataTable tableTb_Otbüsotomasyon;
+        private Tb_OtobusDataTable tableTb_Otobus;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public OtbüsBiletOtomasyonuDataSet() {
+        public OtobusBiletDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace otobüs_bilet_otomasyonu {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected OtbüsBiletOtomasyonuDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected OtobusBiletDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace otobüs_bilet_otomasyonu {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Tb_Otbüsotomasyon"] != null)) {
-                    base.Tables.Add(new Tb_OtbüsotomasyonDataTable(ds.Tables["Tb_Otbüsotomasyon"]));
+                if ((ds.Tables["Tb_Otobus"] != null)) {
+                    base.Tables.Add(new Tb_OtobusDataTable(ds.Tables["Tb_Otobus"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace otobüs_bilet_otomasyonu {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Tb_OtbüsotomasyonDataTable Tb_Otbüsotomasyon {
+        public Tb_OtobusDataTable Tb_Otobus {
             get {
-                return this.tableTb_Otbüsotomasyon;
+                return this.tableTb_Otobus;
             }
         }
         
@@ -127,7 +127,7 @@ namespace otobüs_bilet_otomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            OtbüsBiletOtomasyonuDataSet cln = ((OtbüsBiletOtomasyonuDataSet)(base.Clone()));
+            OtobusBiletDataSet cln = ((OtobusBiletDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace otobüs_bilet_otomasyonu {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Tb_Otbüsotomasyon"] != null)) {
-                    base.Tables.Add(new Tb_OtbüsotomasyonDataTable(ds.Tables["Tb_Otbüsotomasyon"]));
+                if ((ds.Tables["Tb_Otobus"] != null)) {
+                    base.Tables.Add(new Tb_OtobusDataTable(ds.Tables["Tb_Otobus"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace otobüs_bilet_otomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableTb_Otbüsotomasyon = ((Tb_OtbüsotomasyonDataTable)(base.Tables["Tb_Otbüsotomasyon"]));
+            this.tableTb_Otobus = ((Tb_OtobusDataTable)(base.Tables["Tb_Otobus"]));
             if ((initTable == true)) {
-                if ((this.tableTb_Otbüsotomasyon != null)) {
-                    this.tableTb_Otbüsotomasyon.InitVars();
+                if ((this.tableTb_Otobus != null)) {
+                    this.tableTb_Otobus.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace otobüs_bilet_otomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "OtbüsBiletOtomasyonuDataSet";
+            this.DataSetName = "OtobusBiletDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/OtbüsBiletOtomasyonuDataSet.xsd";
+            this.Namespace = "http://tempuri.org/OtobusBiletDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableTb_Otbüsotomasyon = new Tb_OtbüsotomasyonDataTable();
-            base.Tables.Add(this.tableTb_Otbüsotomasyon);
+            this.tableTb_Otobus = new Tb_OtobusDataTable();
+            base.Tables.Add(this.tableTb_Otobus);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeTb_Otbüsotomasyon() {
+        private bool ShouldSerializeTb_Otobus() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace otobüs_bilet_otomasyonu {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            OtbüsBiletOtomasyonuDataSet ds = new OtbüsBiletOtomasyonuDataSet();
+            OtobusBiletDataSet ds = new OtobusBiletDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,20 +270,20 @@ namespace otobüs_bilet_otomasyonu {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Tb_OtbüsotomasyonRowChangeEventHandler(object sender, Tb_OtbüsotomasyonRowChangeEvent e);
+        public delegate void Tb_OtobusRowChangeEventHandler(object sender, Tb_OtobusRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Tb_OtbüsotomasyonDataTable : global::System.Data.TypedTableBase<Tb_OtbüsotomasyonRow> {
+        public partial class Tb_OtobusDataTable : global::System.Data.TypedTableBase<Tb_OtobusRow> {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnMusteriAd;
+            private global::System.Data.DataColumn columnAd;
             
-            private global::System.Data.DataColumn columnMüsteriSoyad;
+            private global::System.Data.DataColumn columnSoyad;
             
             private global::System.Data.DataColumn columnTelefon;
             
@@ -301,8 +301,8 @@ namespace otobüs_bilet_otomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonDataTable() {
-                this.TableName = "Tb_Otbüsotomasyon";
+            public Tb_OtobusDataTable() {
+                this.TableName = "Tb_Otobus";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -310,7 +310,7 @@ namespace otobüs_bilet_otomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Tb_OtbüsotomasyonDataTable(global::System.Data.DataTable table) {
+            internal Tb_OtobusDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -327,7 +327,7 @@ namespace otobüs_bilet_otomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Tb_OtbüsotomasyonDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Tb_OtobusDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -342,17 +342,17 @@ namespace otobüs_bilet_otomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MusteriAdColumn {
+            public global::System.Data.DataColumn AdColumn {
                 get {
-                    return this.columnMusteriAd;
+                    return this.columnAd;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MüsteriSoyadColumn {
+            public global::System.Data.DataColumn SoyadColumn {
                 get {
-                    return this.columnMüsteriSoyad;
+                    return this.columnSoyad;
                 }
             }
             
@@ -423,38 +423,38 @@ namespace otobüs_bilet_otomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonRow this[int index] {
+            public Tb_OtobusRow this[int index] {
                 get {
-                    return ((Tb_OtbüsotomasyonRow)(this.Rows[index]));
+                    return ((Tb_OtobusRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Tb_OtbüsotomasyonRowChangeEventHandler Tb_OtbüsotomasyonRowChanging;
+            public event Tb_OtobusRowChangeEventHandler Tb_OtobusRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Tb_OtbüsotomasyonRowChangeEventHandler Tb_OtbüsotomasyonRowChanged;
+            public event Tb_OtobusRowChangeEventHandler Tb_OtobusRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Tb_OtbüsotomasyonRowChangeEventHandler Tb_OtbüsotomasyonRowDeleting;
+            public event Tb_OtobusRowChangeEventHandler Tb_OtobusRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Tb_OtbüsotomasyonRowChangeEventHandler Tb_OtbüsotomasyonRowDeleted;
+            public event Tb_OtobusRowChangeEventHandler Tb_OtobusRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddTb_OtbüsotomasyonRow(Tb_OtbüsotomasyonRow row) {
+            public void AddTb_OtobusRow(Tb_OtobusRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonRow AddTb_OtbüsotomasyonRow(string MusteriAd, string MüsteriSoyad, string Telefon, bool Cinsiyet, string Nereden, string Nereye, short KoltukNo, System.DateTime Tarih, string Fiyat) {
-                Tb_OtbüsotomasyonRow rowTb_OtbüsotomasyonRow = ((Tb_OtbüsotomasyonRow)(this.NewRow()));
+            public Tb_OtobusRow AddTb_OtobusRow(string Ad, string Soyad, string Telefon, bool Cinsiyet, string Nereden, string Nereye, short KoltukNo, System.DateTime Tarih, string Fiyat) {
+                Tb_OtobusRow rowTb_OtobusRow = ((Tb_OtobusRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        MusteriAd,
-                        MüsteriSoyad,
+                        Ad,
+                        Soyad,
                         Telefon,
                         Cinsiyet,
                         Nereden,
@@ -462,22 +462,22 @@ namespace otobüs_bilet_otomasyonu {
                         KoltukNo,
                         Tarih,
                         Fiyat};
-                rowTb_OtbüsotomasyonRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTb_OtbüsotomasyonRow);
-                return rowTb_OtbüsotomasyonRow;
+                rowTb_OtobusRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTb_OtobusRow);
+                return rowTb_OtobusRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonRow FindByID(int ID) {
-                return ((Tb_OtbüsotomasyonRow)(this.Rows.Find(new object[] {
+            public Tb_OtobusRow FindByID(int ID) {
+                return ((Tb_OtobusRow)(this.Rows.Find(new object[] {
                             ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Tb_OtbüsotomasyonDataTable cln = ((Tb_OtbüsotomasyonDataTable)(base.Clone()));
+                Tb_OtobusDataTable cln = ((Tb_OtobusDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -485,15 +485,15 @@ namespace otobüs_bilet_otomasyonu {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Tb_OtbüsotomasyonDataTable();
+                return new Tb_OtobusDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnMusteriAd = base.Columns["MusteriAd"];
-                this.columnMüsteriSoyad = base.Columns["MüsteriSoyad"];
+                this.columnAd = base.Columns["Ad"];
+                this.columnSoyad = base.Columns["Soyad"];
                 this.columnTelefon = base.Columns["Telefon"];
                 this.columnCinsiyet = base.Columns["Cinsiyet"];
                 this.columnNereden = base.Columns["Nereden"];
@@ -508,10 +508,10 @@ namespace otobüs_bilet_otomasyonu {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnMusteriAd = new global::System.Data.DataColumn("MusteriAd", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMusteriAd);
-                this.columnMüsteriSoyad = new global::System.Data.DataColumn("MüsteriSoyad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMüsteriSoyad);
+                this.columnAd = new global::System.Data.DataColumn("Ad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAd);
+                this.columnSoyad = new global::System.Data.DataColumn("Soyad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSoyad);
                 this.columnTelefon = new global::System.Data.DataColumn("Telefon", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTelefon);
                 this.columnCinsiyet = new global::System.Data.DataColumn("Cinsiyet", typeof(bool), null, global::System.Data.MappingType.Element);
@@ -534,8 +534,8 @@ namespace otobüs_bilet_otomasyonu {
                 this.columnID.AllowDBNull = false;
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
-                this.columnMusteriAd.MaxLength = 20;
-                this.columnMüsteriSoyad.MaxLength = 20;
+                this.columnAd.MaxLength = 20;
+                this.columnSoyad.MaxLength = 20;
                 this.columnTelefon.MaxLength = 10;
                 this.columnNereden.MaxLength = 20;
                 this.columnNereye.MaxLength = 20;
@@ -544,28 +544,28 @@ namespace otobüs_bilet_otomasyonu {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonRow NewTb_OtbüsotomasyonRow() {
-                return ((Tb_OtbüsotomasyonRow)(this.NewRow()));
+            public Tb_OtobusRow NewTb_OtobusRow() {
+                return ((Tb_OtobusRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Tb_OtbüsotomasyonRow(builder);
+                return new Tb_OtobusRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Tb_OtbüsotomasyonRow);
+                return typeof(Tb_OtobusRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Tb_OtbüsotomasyonRowChanged != null)) {
-                    this.Tb_OtbüsotomasyonRowChanged(this, new Tb_OtbüsotomasyonRowChangeEvent(((Tb_OtbüsotomasyonRow)(e.Row)), e.Action));
+                if ((this.Tb_OtobusRowChanged != null)) {
+                    this.Tb_OtobusRowChanged(this, new Tb_OtobusRowChangeEvent(((Tb_OtobusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -573,8 +573,8 @@ namespace otobüs_bilet_otomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Tb_OtbüsotomasyonRowChanging != null)) {
-                    this.Tb_OtbüsotomasyonRowChanging(this, new Tb_OtbüsotomasyonRowChangeEvent(((Tb_OtbüsotomasyonRow)(e.Row)), e.Action));
+                if ((this.Tb_OtobusRowChanging != null)) {
+                    this.Tb_OtobusRowChanging(this, new Tb_OtobusRowChangeEvent(((Tb_OtobusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -582,8 +582,8 @@ namespace otobüs_bilet_otomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Tb_OtbüsotomasyonRowDeleted != null)) {
-                    this.Tb_OtbüsotomasyonRowDeleted(this, new Tb_OtbüsotomasyonRowChangeEvent(((Tb_OtbüsotomasyonRow)(e.Row)), e.Action));
+                if ((this.Tb_OtobusRowDeleted != null)) {
+                    this.Tb_OtobusRowDeleted(this, new Tb_OtobusRowChangeEvent(((Tb_OtobusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -591,14 +591,14 @@ namespace otobüs_bilet_otomasyonu {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Tb_OtbüsotomasyonRowDeleting != null)) {
-                    this.Tb_OtbüsotomasyonRowDeleting(this, new Tb_OtbüsotomasyonRowChangeEvent(((Tb_OtbüsotomasyonRow)(e.Row)), e.Action));
+                if ((this.Tb_OtobusRowDeleting != null)) {
+                    this.Tb_OtobusRowDeleting(this, new Tb_OtobusRowChangeEvent(((Tb_OtobusRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveTb_OtbüsotomasyonRow(Tb_OtbüsotomasyonRow row) {
+            public void RemoveTb_OtobusRow(Tb_OtobusRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -607,7 +607,7 @@ namespace otobüs_bilet_otomasyonu {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                OtbüsBiletOtomasyonuDataSet ds = new OtbüsBiletOtomasyonuDataSet();
+                OtobusBiletDataSet ds = new OtobusBiletDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -625,7 +625,7 @@ namespace otobüs_bilet_otomasyonu {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Tb_OtbüsotomasyonDataTable";
+                attribute2.FixedValue = "Tb_OtobusDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -669,57 +669,57 @@ namespace otobüs_bilet_otomasyonu {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Tb_OtbüsotomasyonRow : global::System.Data.DataRow {
+        public partial class Tb_OtobusRow : global::System.Data.DataRow {
             
-            private Tb_OtbüsotomasyonDataTable tableTb_Otbüsotomasyon;
+            private Tb_OtobusDataTable tableTb_Otobus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Tb_OtbüsotomasyonRow(global::System.Data.DataRowBuilder rb) : 
+            internal Tb_OtobusRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableTb_Otbüsotomasyon = ((Tb_OtbüsotomasyonDataTable)(this.Table));
+                this.tableTb_Otobus = ((Tb_OtobusDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int ID {
                 get {
-                    return ((int)(this[this.tableTb_Otbüsotomasyon.IDColumn]));
+                    return ((int)(this[this.tableTb_Otobus.IDColumn]));
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.IDColumn] = value;
+                    this[this.tableTb_Otobus.IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string MusteriAd {
+            public string Ad {
                 get {
                     try {
-                        return ((string)(this[this.tableTb_Otbüsotomasyon.MusteriAdColumn]));
+                        return ((string)(this[this.tableTb_Otobus.AdColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'MusteriAd\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Ad\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.MusteriAdColumn] = value;
+                    this[this.tableTb_Otobus.AdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string MüsteriSoyad {
+            public string Soyad {
                 get {
                     try {
-                        return ((string)(this[this.tableTb_Otbüsotomasyon.MüsteriSoyadColumn]));
+                        return ((string)(this[this.tableTb_Otobus.SoyadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'MüsteriSoyad\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Soyad\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.MüsteriSoyadColumn] = value;
+                    this[this.tableTb_Otobus.SoyadColumn] = value;
                 }
             }
             
@@ -728,14 +728,14 @@ namespace otobüs_bilet_otomasyonu {
             public string Telefon {
                 get {
                     try {
-                        return ((string)(this[this.tableTb_Otbüsotomasyon.TelefonColumn]));
+                        return ((string)(this[this.tableTb_Otobus.TelefonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'Telefon\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Telefon\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.TelefonColumn] = value;
+                    this[this.tableTb_Otobus.TelefonColumn] = value;
                 }
             }
             
@@ -744,14 +744,14 @@ namespace otobüs_bilet_otomasyonu {
             public bool Cinsiyet {
                 get {
                     try {
-                        return ((bool)(this[this.tableTb_Otbüsotomasyon.CinsiyetColumn]));
+                        return ((bool)(this[this.tableTb_Otobus.CinsiyetColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'Cinsiyet\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Cinsiyet\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.CinsiyetColumn] = value;
+                    this[this.tableTb_Otobus.CinsiyetColumn] = value;
                 }
             }
             
@@ -760,14 +760,14 @@ namespace otobüs_bilet_otomasyonu {
             public string Nereden {
                 get {
                     try {
-                        return ((string)(this[this.tableTb_Otbüsotomasyon.NeredenColumn]));
+                        return ((string)(this[this.tableTb_Otobus.NeredenColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'Nereden\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Nereden\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.NeredenColumn] = value;
+                    this[this.tableTb_Otobus.NeredenColumn] = value;
                 }
             }
             
@@ -776,14 +776,14 @@ namespace otobüs_bilet_otomasyonu {
             public string Nereye {
                 get {
                     try {
-                        return ((string)(this[this.tableTb_Otbüsotomasyon.NereyeColumn]));
+                        return ((string)(this[this.tableTb_Otobus.NereyeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'Nereye\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Nereye\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.NereyeColumn] = value;
+                    this[this.tableTb_Otobus.NereyeColumn] = value;
                 }
             }
             
@@ -792,14 +792,14 @@ namespace otobüs_bilet_otomasyonu {
             public short KoltukNo {
                 get {
                     try {
-                        return ((short)(this[this.tableTb_Otbüsotomasyon.KoltukNoColumn]));
+                        return ((short)(this[this.tableTb_Otobus.KoltukNoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'KoltukNo\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'KoltukNo\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.KoltukNoColumn] = value;
+                    this[this.tableTb_Otobus.KoltukNoColumn] = value;
                 }
             }
             
@@ -808,14 +808,14 @@ namespace otobüs_bilet_otomasyonu {
             public System.DateTime Tarih {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableTb_Otbüsotomasyon.TarihColumn]));
+                        return ((global::System.DateTime)(this[this.tableTb_Otobus.TarihColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'Tarih\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Tarih\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.TarihColumn] = value;
+                    this[this.tableTb_Otobus.TarihColumn] = value;
                 }
             }
             
@@ -824,123 +824,123 @@ namespace otobüs_bilet_otomasyonu {
             public string Fiyat {
                 get {
                     try {
-                        return ((string)(this[this.tableTb_Otbüsotomasyon.FiyatColumn]));
+                        return ((string)(this[this.tableTb_Otobus.FiyatColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'Tb_Otbüsotomasyon\' tablosundaki \'Fiyat\' sütunun değeri DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("\'Tb_Otobus\' tablosundaki \'Fiyat\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTb_Otbüsotomasyon.FiyatColumn] = value;
+                    this[this.tableTb_Otobus.FiyatColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMusteriAdNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.MusteriAdColumn);
+            public bool IsAdNull() {
+                return this.IsNull(this.tableTb_Otobus.AdColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMusteriAdNull() {
-                this[this.tableTb_Otbüsotomasyon.MusteriAdColumn] = global::System.Convert.DBNull;
+            public void SetAdNull() {
+                this[this.tableTb_Otobus.AdColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMüsteriSoyadNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.MüsteriSoyadColumn);
+            public bool IsSoyadNull() {
+                return this.IsNull(this.tableTb_Otobus.SoyadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMüsteriSoyadNull() {
-                this[this.tableTb_Otbüsotomasyon.MüsteriSoyadColumn] = global::System.Convert.DBNull;
+            public void SetSoyadNull() {
+                this[this.tableTb_Otobus.SoyadColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTelefonNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.TelefonColumn);
+                return this.IsNull(this.tableTb_Otobus.TelefonColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTelefonNull() {
-                this[this.tableTb_Otbüsotomasyon.TelefonColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.TelefonColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsCinsiyetNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.CinsiyetColumn);
+                return this.IsNull(this.tableTb_Otobus.CinsiyetColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetCinsiyetNull() {
-                this[this.tableTb_Otbüsotomasyon.CinsiyetColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.CinsiyetColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNeredenNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.NeredenColumn);
+                return this.IsNull(this.tableTb_Otobus.NeredenColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNeredenNull() {
-                this[this.tableTb_Otbüsotomasyon.NeredenColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.NeredenColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNereyeNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.NereyeColumn);
+                return this.IsNull(this.tableTb_Otobus.NereyeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNereyeNull() {
-                this[this.tableTb_Otbüsotomasyon.NereyeColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.NereyeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsKoltukNoNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.KoltukNoColumn);
+                return this.IsNull(this.tableTb_Otobus.KoltukNoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetKoltukNoNull() {
-                this[this.tableTb_Otbüsotomasyon.KoltukNoColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.KoltukNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTarihNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.TarihColumn);
+                return this.IsNull(this.tableTb_Otobus.TarihColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTarihNull() {
-                this[this.tableTb_Otbüsotomasyon.TarihColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.TarihColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsFiyatNull() {
-                return this.IsNull(this.tableTb_Otbüsotomasyon.FiyatColumn);
+                return this.IsNull(this.tableTb_Otobus.FiyatColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFiyatNull() {
-                this[this.tableTb_Otbüsotomasyon.FiyatColumn] = global::System.Convert.DBNull;
+                this[this.tableTb_Otobus.FiyatColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -948,22 +948,22 @@ namespace otobüs_bilet_otomasyonu {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Tb_OtbüsotomasyonRowChangeEvent : global::System.EventArgs {
+        public class Tb_OtobusRowChangeEvent : global::System.EventArgs {
             
-            private Tb_OtbüsotomasyonRow eventRow;
+            private Tb_OtobusRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonRowChangeEvent(Tb_OtbüsotomasyonRow row, global::System.Data.DataRowAction action) {
+            public Tb_OtobusRowChangeEvent(Tb_OtobusRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Tb_OtbüsotomasyonRow Row {
+            public Tb_OtobusRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -979,7 +979,7 @@ namespace otobüs_bilet_otomasyonu {
         }
     }
 }
-namespace otobüs_bilet_otomasyonu.OtbüsBiletOtomasyonuDataSetTableAdapters {
+namespace Otobüs.OtobusBiletDataSetTableAdapters {
     
     
     /// <summary>
@@ -991,7 +991,7 @@ namespace otobüs_bilet_otomasyonu.OtbüsBiletOtomasyonuDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Tb_OtbüsotomasyonTableAdapter : global::System.ComponentModel.Component {
+    public partial class Tb_OtobusTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1005,7 +1005,7 @@ namespace otobüs_bilet_otomasyonu.OtbüsBiletOtomasyonuDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Tb_OtbüsotomasyonTableAdapter() {
+        public Tb_OtobusTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1102,10 +1102,10 @@ namespace otobüs_bilet_otomasyonu.OtbüsBiletOtomasyonuDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Tb_Otbüsotomasyon";
+            tableMapping.DataSetTable = "Tb_Otobus";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("MusteriAd", "MusteriAd");
-            tableMapping.ColumnMappings.Add("MüsteriSoyad", "MüsteriSoyad");
+            tableMapping.ColumnMappings.Add("Ad", "Ad");
+            tableMapping.ColumnMappings.Add("Soyad", "Soyad");
             tableMapping.ColumnMappings.Add("Telefon", "Telefon");
             tableMapping.ColumnMappings.Add("Cinsiyet", "Cinsiyet");
             tableMapping.ColumnMappings.Add("Nereden", "Nereden");
@@ -1116,13 +1116,13 @@ namespace otobüs_bilet_otomasyonu.OtbüsBiletOtomasyonuDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Tb_Otbüsotomasyon] WHERE (([ID] = @Original_ID) AND ((@IsNull_MusteriAd = 1 AND [MusteriAd] IS NULL) OR ([MusteriAd] = @Original_MusteriAd)) AND ((@IsNull_MüsteriSoyad = 1 AND [MüsteriSoyad] IS NULL) OR ([MüsteriSoyad] = @Original_MüsteriSoyad)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Cinsiyet = 1 AND [Cinsiyet] IS NULL) OR ([Cinsiyet] = @Original_Cinsiyet)) AND ((@IsNull_Nereden = 1 AND [Nereden] IS NULL) OR ([Nereden] = @Original_Nereden)) AND ((@IsNull_Nereye = 1 AND [Nereye] IS NULL) OR ([Nereye] = @Original_Nereye)) AND ((@IsNull_KoltukNo = 1 AND [KoltukNo] IS NULL) OR ([KoltukNo] = @Original_KoltukNo)) AND ((@IsNull_Tarih = 1 AND [Tarih] IS NULL) OR ([Tarih] = @Original_Tarih)) AND ((@IsNull_Fiyat = 1 AND [Fiyat] IS NULL) OR ([Fiyat] = @Original_Fiyat)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Tb_Otobus] WHERE (([ID] = @Original_ID) AND ((@IsNull_Ad = 1 AND [Ad] IS NULL) OR ([Ad] = @Original_Ad)) AND ((@IsNull_Soyad = 1 AND [Soyad] IS NULL) OR ([Soyad] = @Original_Soyad)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Cinsiyet = 1 AND [Cinsiyet] IS NULL) OR ([Cinsiyet] = @Original_Cinsiyet)) AND ((@IsNull_Nereden = 1 AND [Nereden] IS NULL) OR ([Nereden] = @Original_Nereden)) AND ((@IsNull_Nereye = 1 AND [Nereye] IS NULL) OR ([Nereye] = @Original_Nereye)) AND ((@IsNull_KoltukNo = 1 AND [KoltukNo] IS NULL) OR ([KoltukNo] = @Original_KoltukNo)) AND ((@IsNull_Tarih = 1 AND [Tarih] IS NULL) OR ([Tarih] = @Original_Tarih)) AND ((@IsNull_Fiyat = 1 AND [Fiyat] IS NULL) OR ([Fiyat] = @Original_Fiyat)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MusteriAd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MusteriAd", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MusteriAd", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MusteriAd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MüsteriSoyad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MüsteriSoyad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MüsteriSoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MüsteriSoyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Soyad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Soyad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Soyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Soyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Telefon", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cinsiyet", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cinsiyet", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1139,11 +1139,11 @@ namespace otobüs_bilet_otomasyonu.OtbüsBiletOtomasyonuDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Fiyat", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fiyat", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Tb_Otbüsotomasyon] ([MusteriAd], [MüsteriSoyad], [Telefon], [Cinsiyet], [Nereden], [Nereye], [KoltukNo], [Tarih], [Fiyat]) VALUES (@MusteriAd, @MüsteriSoyad, @Telefon, @Cinsiyet, @Nereden, @Nereye, @KoltukNo, @Tarih, @Fiyat);
-SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat FROM Tb_Otbüsotomasyon WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Tb_Otobus] ([Ad], [Soyad], [Telefon], [Cinsiyet], [Nereden], [Nereye], [KoltukNo], [Tarih], [Fiyat]) VALUES (@Ad, @Soyad, @Telefon, @Cinsiyet, @Nereden, @Nereye, @KoltukNo, @Tarih, @Fiyat);
+SELECT ID, Ad, Soyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat FROM Tb_Otobus WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MusteriAd", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MusteriAd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MüsteriSoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MüsteriSoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Soyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Soyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cinsiyet", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cinsiyet", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nereden", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nereden", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1153,11 +1153,11 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fiyat", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Tb_Otbüsotomasyon] SET [MusteriAd] = @MusteriAd, [MüsteriSoyad] = @MüsteriSoyad, [Telefon] = @Telefon, [Cinsiyet] = @Cinsiyet, [Nereden] = @Nereden, [Nereye] = @Nereye, [KoltukNo] = @KoltukNo, [Tarih] = @Tarih, [Fiyat] = @Fiyat WHERE (([ID] = @Original_ID) AND ((@IsNull_MusteriAd = 1 AND [MusteriAd] IS NULL) OR ([MusteriAd] = @Original_MusteriAd)) AND ((@IsNull_MüsteriSoyad = 1 AND [MüsteriSoyad] IS NULL) OR ([MüsteriSoyad] = @Original_MüsteriSoyad)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Cinsiyet = 1 AND [Cinsiyet] IS NULL) OR ([Cinsiyet] = @Original_Cinsiyet)) AND ((@IsNull_Nereden = 1 AND [Nereden] IS NULL) OR ([Nereden] = @Original_Nereden)) AND ((@IsNull_Nereye = 1 AND [Nereye] IS NULL) OR ([Nereye] = @Original_Nereye)) AND ((@IsNull_KoltukNo = 1 AND [KoltukNo] IS NULL) OR ([KoltukNo] = @Original_KoltukNo)) AND ((@IsNull_Tarih = 1 AND [Tarih] IS NULL) OR ([Tarih] = @Original_Tarih)) AND ((@IsNull_Fiyat = 1 AND [Fiyat] IS NULL) OR ([Fiyat] = @Original_Fiyat)));
-SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat FROM Tb_Otbüsotomasyon WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Tb_Otobus] SET [Ad] = @Ad, [Soyad] = @Soyad, [Telefon] = @Telefon, [Cinsiyet] = @Cinsiyet, [Nereden] = @Nereden, [Nereye] = @Nereye, [KoltukNo] = @KoltukNo, [Tarih] = @Tarih, [Fiyat] = @Fiyat WHERE (([ID] = @Original_ID) AND ((@IsNull_Ad = 1 AND [Ad] IS NULL) OR ([Ad] = @Original_Ad)) AND ((@IsNull_Soyad = 1 AND [Soyad] IS NULL) OR ([Soyad] = @Original_Soyad)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Cinsiyet = 1 AND [Cinsiyet] IS NULL) OR ([Cinsiyet] = @Original_Cinsiyet)) AND ((@IsNull_Nereden = 1 AND [Nereden] IS NULL) OR ([Nereden] = @Original_Nereden)) AND ((@IsNull_Nereye = 1 AND [Nereye] IS NULL) OR ([Nereye] = @Original_Nereye)) AND ((@IsNull_KoltukNo = 1 AND [KoltukNo] IS NULL) OR ([KoltukNo] = @Original_KoltukNo)) AND ((@IsNull_Tarih = 1 AND [Tarih] IS NULL) OR ([Tarih] = @Original_Tarih)) AND ((@IsNull_Fiyat = 1 AND [Fiyat] IS NULL) OR ([Fiyat] = @Original_Fiyat)));
+SELECT ID, Ad, Soyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat FROM Tb_Otobus WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MusteriAd", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MusteriAd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MüsteriSoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MüsteriSoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Soyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Soyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cinsiyet", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cinsiyet", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nereden", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nereden", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1166,10 +1166,10 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fiyat", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Fiyat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MusteriAd", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MusteriAd", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MusteriAd", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MusteriAd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MüsteriSoyad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MüsteriSoyad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MüsteriSoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MüsteriSoyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Soyad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Soyad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Soyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Soyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Telefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Telefon", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cinsiyet", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cinsiyet", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1191,7 +1191,7 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::otobüs_bilet_otomasyonu.Properties.Settings.Default.OtbüsBiletOtomasyonuConnectionString;
+            this._connection.ConnectionString = global::Otobüs.Properties.Settings.Default.OtobusBiletConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1200,8 +1200,8 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo," +
-                " Tarih, Fiyat FROM dbo.Tb_Otbüsotomasyon";
+            this._commandCollection[0].CommandText = "SELECT ID, Ad, Soyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat " +
+                "FROM dbo.Tb_Otobus";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1209,7 +1209,7 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(OtbüsBiletOtomasyonuDataSet.Tb_OtbüsotomasyonDataTable dataTable) {
+        public virtual int Fill(OtobusBiletDataSet.Tb_OtobusDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1222,9 +1222,9 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual OtbüsBiletOtomasyonuDataSet.Tb_OtbüsotomasyonDataTable GetData() {
+        public virtual OtobusBiletDataSet.Tb_OtobusDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            OtbüsBiletOtomasyonuDataSet.Tb_OtbüsotomasyonDataTable dataTable = new OtbüsBiletOtomasyonuDataSet.Tb_OtbüsotomasyonDataTable();
+            OtobusBiletDataSet.Tb_OtobusDataTable dataTable = new OtobusBiletDataSet.Tb_OtobusDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1232,15 +1232,15 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(OtbüsBiletOtomasyonuDataSet.Tb_OtbüsotomasyonDataTable dataTable) {
+        public virtual int Update(OtobusBiletDataSet.Tb_OtobusDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(OtbüsBiletOtomasyonuDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Tb_Otbüsotomasyon");
+        public virtual int Update(OtobusBiletDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Tb_Otobus");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1262,23 +1262,23 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_MusteriAd, string Original_MüsteriSoyad, string Original_Telefon, global::System.Nullable<bool> Original_Cinsiyet, string Original_Nereden, string Original_Nereye, global::System.Nullable<short> Original_KoltukNo, global::System.Nullable<global::System.DateTime> Original_Tarih, string Original_Fiyat) {
+        public virtual int Delete(int Original_ID, string Original_Ad, string Original_Soyad, string Original_Telefon, global::System.Nullable<bool> Original_Cinsiyet, string Original_Nereden, string Original_Nereye, global::System.Nullable<short> Original_KoltukNo, global::System.Nullable<global::System.DateTime> Original_Tarih, string Original_Fiyat) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_MusteriAd == null)) {
+            if ((Original_Ad == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_MusteriAd));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Ad));
             }
-            if ((Original_MüsteriSoyad == null)) {
+            if ((Original_Soyad == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_MüsteriSoyad));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Soyad));
             }
             if ((Original_Telefon == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
@@ -1356,18 +1356,18 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string MusteriAd, string MüsteriSoyad, string Telefon, global::System.Nullable<bool> Cinsiyet, string Nereden, string Nereye, global::System.Nullable<short> KoltukNo, global::System.Nullable<global::System.DateTime> Tarih, string Fiyat) {
-            if ((MusteriAd == null)) {
+        public virtual int Insert(string Ad, string Soyad, string Telefon, global::System.Nullable<bool> Cinsiyet, string Nereden, string Nereye, global::System.Nullable<short> KoltukNo, global::System.Nullable<global::System.DateTime> Tarih, string Fiyat) {
+            if ((Ad == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(MusteriAd));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Ad));
             }
-            if ((MüsteriSoyad == null)) {
+            if ((Soyad == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(MüsteriSoyad));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Soyad));
             }
             if ((Telefon == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -1432,8 +1432,8 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string MusteriAd, 
-                    string MüsteriSoyad, 
+                    string Ad, 
+                    string Soyad, 
                     string Telefon, 
                     global::System.Nullable<bool> Cinsiyet, 
                     string Nereden, 
@@ -1442,8 +1442,8 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                     global::System.Nullable<global::System.DateTime> Tarih, 
                     string Fiyat, 
                     int Original_ID, 
-                    string Original_MusteriAd, 
-                    string Original_MüsteriSoyad, 
+                    string Original_Ad, 
+                    string Original_Soyad, 
                     string Original_Telefon, 
                     global::System.Nullable<bool> Original_Cinsiyet, 
                     string Original_Nereden, 
@@ -1452,17 +1452,17 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                     global::System.Nullable<global::System.DateTime> Original_Tarih, 
                     string Original_Fiyat, 
                     int ID) {
-            if ((MusteriAd == null)) {
+            if ((Ad == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(MusteriAd));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Ad));
             }
-            if ((MüsteriSoyad == null)) {
+            if ((Soyad == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(MüsteriSoyad));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Soyad));
             }
             if ((Telefon == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -1507,21 +1507,21 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Fiyat));
             }
             this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_ID));
-            if ((Original_MusteriAd == null)) {
+            if ((Original_Ad == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_MusteriAd));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Ad));
             }
-            if ((Original_MüsteriSoyad == null)) {
+            if ((Original_Soyad == null)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_MüsteriSoyad));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Soyad));
             }
             if ((Original_Telefon == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
@@ -1601,8 +1601,8 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string MusteriAd, 
-                    string MüsteriSoyad, 
+                    string Ad, 
+                    string Soyad, 
                     string Telefon, 
                     global::System.Nullable<bool> Cinsiyet, 
                     string Nereden, 
@@ -1611,8 +1611,8 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                     global::System.Nullable<global::System.DateTime> Tarih, 
                     string Fiyat, 
                     int Original_ID, 
-                    string Original_MusteriAd, 
-                    string Original_MüsteriSoyad, 
+                    string Original_Ad, 
+                    string Original_Soyad, 
                     string Original_Telefon, 
                     global::System.Nullable<bool> Original_Cinsiyet, 
                     string Original_Nereden, 
@@ -1620,7 +1620,7 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                     global::System.Nullable<short> Original_KoltukNo, 
                     global::System.Nullable<global::System.DateTime> Original_Tarih, 
                     string Original_Fiyat) {
-            return this.Update(MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat, Original_ID, Original_MusteriAd, Original_MüsteriSoyad, Original_Telefon, Original_Cinsiyet, Original_Nereden, Original_Nereye, Original_KoltukNo, Original_Tarih, Original_Fiyat, Original_ID);
+            return this.Update(Ad, Soyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukNo, Tarih, Fiyat, Original_ID, Original_Ad, Original_Soyad, Original_Telefon, Original_Cinsiyet, Original_Nereden, Original_Nereye, Original_KoltukNo, Original_Tarih, Original_Fiyat, Original_ID);
         }
     }
     
@@ -1636,7 +1636,7 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         
         private UpdateOrderOption _updateOrder;
         
-        private Tb_OtbüsotomasyonTableAdapter _tb_OtbüsotomasyonTableAdapter;
+        private Tb_OtobusTableAdapter _tb_OtobusTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1658,12 +1658,12 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Tb_OtbüsotomasyonTableAdapter Tb_OtbüsotomasyonTableAdapter {
+        public Tb_OtobusTableAdapter Tb_OtobusTableAdapter {
             get {
-                return this._tb_OtbüsotomasyonTableAdapter;
+                return this._tb_OtobusTableAdapter;
             }
             set {
-                this._tb_OtbüsotomasyonTableAdapter = value;
+                this._tb_OtobusTableAdapter = value;
             }
         }
         
@@ -1686,9 +1686,9 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tb_OtbüsotomasyonTableAdapter != null) 
-                            && (this._tb_OtbüsotomasyonTableAdapter.Connection != null))) {
-                    return this._tb_OtbüsotomasyonTableAdapter.Connection;
+                if (((this._tb_OtobusTableAdapter != null) 
+                            && (this._tb_OtobusTableAdapter.Connection != null))) {
+                    return this._tb_OtobusTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1703,7 +1703,7 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tb_OtbüsotomasyonTableAdapter != null)) {
+                if ((this._tb_OtobusTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1715,14 +1715,14 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(OtbüsBiletOtomasyonuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(OtobusBiletDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tb_OtbüsotomasyonTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Tb_Otbüsotomasyon.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tb_OtobusTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Tb_Otobus.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tb_OtbüsotomasyonTableAdapter.Update(updatedRows));
+                    result = (result + this._tb_OtobusTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1734,13 +1734,13 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(OtbüsBiletOtomasyonuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(OtobusBiletDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tb_OtbüsotomasyonTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Tb_Otbüsotomasyon.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tb_OtobusTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Tb_Otobus.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tb_OtbüsotomasyonTableAdapter.Update(addedRows));
+                    result = (result + this._tb_OtobusTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1752,13 +1752,13 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(OtbüsBiletOtomasyonuDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(OtobusBiletDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tb_OtbüsotomasyonTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Tb_Otbüsotomasyon.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tb_OtobusTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Tb_Otobus.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tb_OtbüsotomasyonTableAdapter.Update(deletedRows));
+                    result = (result + this._tb_OtobusTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1794,15 +1794,15 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(OtbüsBiletOtomasyonuDataSet dataSet) {
+        public virtual int UpdateAll(OtobusBiletDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tb_OtbüsotomasyonTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tb_OtbüsotomasyonTableAdapter.Connection) == false))) {
+            if (((this._tb_OtobusTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tb_OtobusTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
@@ -1838,13 +1838,13 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tb_OtbüsotomasyonTableAdapter != null)) {
-                    revertConnections.Add(this._tb_OtbüsotomasyonTableAdapter, this._tb_OtbüsotomasyonTableAdapter.Connection);
-                    this._tb_OtbüsotomasyonTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tb_OtbüsotomasyonTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tb_OtbüsotomasyonTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tb_OtbüsotomasyonTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tb_OtbüsotomasyonTableAdapter.Adapter);
+                if ((this._tb_OtobusTableAdapter != null)) {
+                    revertConnections.Add(this._tb_OtobusTableAdapter, this._tb_OtobusTableAdapter.Connection);
+                    this._tb_OtobusTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tb_OtobusTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tb_OtobusTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tb_OtobusTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tb_OtobusTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1905,9 +1905,9 @@ SELECT ID, MusteriAd, MüsteriSoyad, Telefon, Cinsiyet, Nereden, Nereye, KoltukN
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tb_OtbüsotomasyonTableAdapter != null)) {
-                    this._tb_OtbüsotomasyonTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tb_OtbüsotomasyonTableAdapter]));
-                    this._tb_OtbüsotomasyonTableAdapter.Transaction = null;
+                if ((this._tb_OtobusTableAdapter != null)) {
+                    this._tb_OtobusTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tb_OtobusTableAdapter]));
+                    this._tb_OtobusTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

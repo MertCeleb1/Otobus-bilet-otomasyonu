@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{195124BA-82B7-4A4F-9682-8931E270DB3C}</ProjectGuid>
+    <ProjectGuid>{C69E14EA-CE80-43E8-8913-15E10BC3D45E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>otobüs_bilet_otomasyonu</RootNamespace>
-    <AssemblyName>otobüs bilet otomasyonu</AssemblyName>
+    <RootNamespace>Otobüs</RootNamespace>
+    <AssemblyName>Otobüs</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -58,15 +58,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="OtbüsBiletOtomasyonuDataSet.Designer.cs">
+    <Compile Include="OtobusBiletDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OtbüsBiletOtomasyonuDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PersonelVeriTabaniDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PersonelVeriTabaniDataSet.xsd</DependentUpon>
+      <DependentUpon>OtobusBiletDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,33 +82,23 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="YolcuKayıt.resx">
       <DependentUpon>YolcuKayıt.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="OtbüsBiletOtomasyonuDataSet.xsc">
-      <DependentUpon>OtbüsBiletOtomasyonuDataSet.xsd</DependentUpon>
+    <None Include="OtobusBiletDataSet.xsc">
+      <DependentUpon>OtobusBiletDataSet.xsd</DependentUpon>
     </None>
-    <None Include="OtbüsBiletOtomasyonuDataSet.xsd">
+    <None Include="OtobusBiletDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>OtbüsBiletOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>OtobusBiletDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="OtbüsBiletOtomasyonuDataSet.xss">
-      <DependentUpon>OtbüsBiletOtomasyonuDataSet.xsd</DependentUpon>
+    <None Include="OtobusBiletDataSet.xss">
+      <DependentUpon>OtobusBiletDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="PersonelVeriTabaniDataSet.xsc">
-      <DependentUpon>PersonelVeriTabaniDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PersonelVeriTabaniDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PersonelVeriTabaniDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PersonelVeriTabaniDataSet.xss">
-      <DependentUpon>PersonelVeriTabaniDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,6 +111,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

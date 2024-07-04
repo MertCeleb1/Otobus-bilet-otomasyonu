@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace otobüs_bilet_otomasyonu.Properties {
+namespace Otobüs.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,22 +26,11 @@ namespace otobüs_bilet_otomasyonu.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-71IKNM6\\SQLEXPRESS;Initial Catalog=OtbüsBiletOtomasyonu;Integ" +
-            "rated Security=True")]
-        public string OtbüsBiletOtomasyonuConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-71IKNM6\\SQLEXPRESS;Initial Catalog=OtobusBilet;Integrated Sec" +
+            "urity=True")]
+        public string OtobusBiletConnectionString {
             get {
-                return ((string)(this["OtbüsBiletOtomasyonuConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-71IKNM6\\SQLEXPRESS;Initial Catalog=PersonelVeriTabani;Integra" +
-            "ted Security=True")]
-        public string PersonelVeriTabaniConnectionString {
-            get {
-                return ((string)(this["PersonelVeriTabaniConnectionString"]));
+                return ((string)(this["OtobusBiletConnectionString"]));
             }
         }
     }

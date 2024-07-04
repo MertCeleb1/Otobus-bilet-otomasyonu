@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace otobüs_bilet_otomasyonu
+namespace Otobüs
 {
     public partial class YolcuKayıt : Form
     {
@@ -17,15 +17,15 @@ namespace otobüs_bilet_otomasyonu
             InitializeComponent();
         }
 
-        private void btnİptal_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
-        private void btnTamam_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
-            this.DialogResult= DialogResult.OK;
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }
